@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" translate="yes">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/assets/logo1-BL24D1mB.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Developer Portfolio</title>
+    <meta name="description" content="A modern, interactive portfolio showcasing web development skills and projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+      /* Masquer la bannière de traduction Google */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+      /* Règles pour le widget Google Translate */
+      #google_translate_element {
+        position: static; /* Visible pendant l'initialisation */
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .goog-logo-link {
+        display: none !important;
+      }
+      .goog-te-gadget {
+        color: transparent !important;
+      }
+      .VIpgJd-ZVi9od-ORHb-OEVmcd{
+        z-index: 0!important;
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-BotXwH7X.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DTO6E_YY.css">
+  </head>
+  <body class="bg-white text-gray-900">
+    <div id="root"></div>
+    <!-- Widget Google Translate -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+        // Après 2 secondes, on masque le widget en le déplaçant hors écran
+        setTimeout(() => {
+          const container = document.getElementById('google_translate_element');
+          if (container) {
+            container.style.position = 'absolute';
+            container.style.top = '0';
+            container.style.left = '-9999px';
+            container.style.opacity = '0';
+            container.style.pointerEvents = 'none';
+          }
+        }, 2000);
+      }
+    </script>
+    <!-- Script de Google Translate sur une seule ligne -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
